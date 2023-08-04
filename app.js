@@ -35,4 +35,4 @@ document.getElementById('weatherForm').addEventListener('submit', (event) => {
         document.getElementById('weatherInfo').classList.remove('hidden');
       });
   }
-});
+})

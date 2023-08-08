@@ -1,6 +1,7 @@
 const apiKey = "ba6f260343e0ba0afd7fa5521964b6c1"
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-const searchBox = document.querySelector("")
+const searchBox = document.querySelector("search input")
+const searchBtn = document.querySelector("search button")
 async function checkWeather(city){
   const response = await fetch(apiUrl + `&appid=${apiKey}`);
   var data = await response.json();
@@ -12,3 +13,7 @@ async function checkWeather(city){
   document.querySelector(".wind").innerHTML = data.wind.speed + "Km/h";
 }
 checkWeather();
+
+searchBtn.addEventListener("click", ()=>{
+  checkWeather(searchBox.value)
+})

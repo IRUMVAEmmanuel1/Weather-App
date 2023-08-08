@@ -20,4 +20,5 @@ body {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
     padding: 40px 35px;
+    text-align: center;
 }

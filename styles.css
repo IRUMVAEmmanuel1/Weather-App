@@ -45,3 +45,8 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
+
+.search button{
+    border: 0;
+    outline: 0;
+}

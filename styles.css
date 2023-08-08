@@ -49,4 +49,10 @@ body {
 .search button{
     border: 0;
     outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }

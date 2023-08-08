@@ -9,8 +9,8 @@ async function checkWeather(city){
   if(response.status ==404){
     document.querySelector(".error").computedStyleMap.display ="block"
     document.querySelector(".weather").computedStyleMap.display ="none"
-  }else{
-    var data = await response.json();
+  }
+  var data = await response.json();
 
 
   document.querySelector(".city").innerHTML = data.name;
@@ -39,11 +39,9 @@ async function checkWeather(city){
 
   }
 
-  document.querySelector(".weather").style.display= "block"
+  // document.querySelector(".weather").style.display= "block"
 }
 
-  }
-  
 
 searchBtn.addEventListener("click", ()=>{
   checkWeather(searchBox.value)

@@ -11,8 +11,6 @@ async function checkWeather(city){
     document.querySelector(".weather").computedStyleMap.display ="none"
   }
   var data = await response.json();
-
-
   document.querySelector(".city").innerHTML = data.name;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp)  + "°c";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
